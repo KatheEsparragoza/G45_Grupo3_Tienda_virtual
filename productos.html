@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="menu logo-nav">
+        <a href="index.html" class="logo">TIENDA DE MI BARRIO</a>
+        <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+        <nav class="navigation">
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="search-icon">
+              <input type="search" placeholder="Search">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+            <li class="car" >
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+                <div id="carrito" class="dropdown-menu">
+                  <table id="lista-carrito" class="table">
+                      <thead>
+                          <tr>
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Precio</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="button-pedido">Procesar Compra</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<main>
+
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="" alt="" class="modal-img" id="modal-img">
+          </div>
+          <div class="modal-boton" id="modal-boton">X</div>
+        </div>
+
+        <div class="container-productos" id="lista-productos">
+
+          <div class="card">
+            <img src="https://www.mercave.com.co/wp-content/uploads/erp/productos/02003/rzd_arroz_diana_500g.jpg" class="card-img">
+            <h5>ARROZ DIANA x500gr</h5>
+            <p>COD: ALIM001</p>
+            <p>$/.<small class="precio">1.500</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://restaurantepapos.com/wp-content/uploads/2021/01/gaseosa-coca-cola-15-lt.jpg" class="card-img">
+            <h5>COCA COLA 1/4</h5>
+            <p>COD: BEBI001</p>
+            <p>$/.<small class="precio">4.000</small></p>
+            <a href="#" class="button agregar-carrito" data-id="2">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM1ZGalE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f8678a807211b322e39dbc5c8047f7299a9c6664/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/lenteja.png?locale=es" class="card-img">
+            <h5>LENTEJAS EL TRECE x500gr</h5>
+            <p>COD: ALIM002</p>
+            <p>$/.<small class="precio">3.600</small></p>
+            <a href="#" class="button agregar-carrito" data-id="3">Comprar</a>
+          </div>
+
+          <div class="card">
+            <img src="https://www.eurosupermercados.com.co/media/catalog/product/cache/5db2c2cd17d64c361c13f6f6460f1cf1/7/7/7701101356722.jpg" class="card-img">
+            <h5>FRIJOLES ANTIOQUEÑOS ZENU x580gr</h5>
+            <p>COD: ENLAT003</p>
+            <p>$/.<small class="precio">8.850</small></p>
+            <a href="#" class="button agregar-carrito" data-id="4">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://exitocol.vtexassets.com/arquivos/ids/5373681/Salchicha-Ranchera-X-480-G-1047205_b.jpg?v=637439180281000000" class="card-img">
+            <h5>SALCHICHAS RANCHERA x480gr</h5>
+            <p>COD: EMBU001</p>
+            <p>$/.<small class="precio">8.200</small></p>
+            <a href="#" class="button agregar-carrito" data-id="5">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_detergente_fab_4000gr_cuidado_de_la_ropa_1024x1024.jpg?v=1620655247" class="card-img">
+            <h5>DETERGENTE FAB x4000gr</h5>
+            <p>COD: ASEO001</p>
+            <p>$/.<small class="precio">9.600</small></p>
+            <a href="#" class="button agregar-carrito" data-id="6">Comprar</a>
+          </div>
+
+          <div class="card">
+            <img src="https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMW9JZ1E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--06f1874a496eec03695696ab345849d0e9540636/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/14.%20Crema%20Dental%20Triple%20Accion%20Xtra%20Blancura%2060ml.png?locale=es" class="card-img">
+            <h5>CREMA DENTAL EXTRA BLANCURA COLGATE x60mL</h5>
+            <p>COD: ASEO002</p>
+            <p>$/.<small class="precio">3.300</small></p>
+            <a href="#" class="button agregar-carrito" data-id="7">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://exitocol.vtexassets.com/arquivos/ids/9970912/REPOLLO-MORADO-UNIDAD-1601883_a.jpg?v=637672465730730000" class="card-img">
+            <h5>REPOLLO MORADO x1und</h5>
+            <p>COD: VERD001</p>
+            <p>$/.<small class="precio">1.500</small></p>
+            <a href="#" class="button agregar-carrito" data-id="8">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://exitocol.vtexassets.com/arquivos/ids/13315417-800-auto?v=637911315952000000&width=800&height=auto&aspect=true" class="card-img">
+            <h5>HUEVOS ROJO A x30und</h5>
+            <p>COD: ALIM003</p>
+            <p>$/.<small class="precio">3.000</small></p>
+            <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://supermercadocomunal.com/verbenal/865-large_default/yogurt-alpina-mora-200-gr.jpg" class="card-img">
+            <h5>YOGURT ALPINA MORA x200gr</h5>
+            <p>COD: BEBI002</p>
+            <p>$/.<small class="precio">2.800</small></p>
+            <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://exitocol.vtexassets.com/arquivos/ids/13175092/Bon-Bon-Bum-Surtido-165524_a.jpg?v=637899471346770000" class="card-img">
+            <h5>SURTIDO BOM BOM BUM x12und</h5>
+            <p>COD: DULC001</p>
+            <p>$/.<small class="precio">5.200</small></p>
+            <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="https://exitocol.vtexassets.com/arquivos/ids/11317745/Fresa-Primera-X-500gr-1721_a.jpg?v=637752022533100000" class="card-img">
+            <h5>FRESAS  x500gr</h5>
+            <p>COD: FRUT001</p>
+            <p>$/.<small class="precio">3.000</small></p>
+            <a href="#" class="button agregar-carrito" data-id="9">Comprar</a>
+          </div>
+
+        </div>
+</main>
+  
+
+<footer class="footer-section">
+  <div class="copyright-area">
+      <div class="container-footer">
+          <div class="row-footer">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2022, todos los derechos reservados <a href="index.html">TIENDA DE MI BARRIO</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="nosotros.html">Nosotros</a></li>
+                          <li><a href="productos.html">Productos</a></li>
+                          <li><a href="categorias">Categorias</a></li>
+                          <li><a href="contacto.html">Contacto</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> 
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script  src="assets/js/scripts.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/pedido.js"></script>
+    <script src="assets/js/compra.js"></script>
+</body>
+</html>
