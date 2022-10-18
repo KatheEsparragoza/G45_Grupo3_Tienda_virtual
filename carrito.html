@@ -37,7 +37,11 @@
               
                   <h2>Realizar Compra</h2>
                   <form id="procesar-pago" action="#" method="POST">
-                      <div class="contenido titulo">
+                    <div class="contenido titulo">
+                      <label for="cedula" class="">Cedula :</label>
+                      <input type="cedula" class="form-control" id="cedula" name="cedula" placeholder="Ingrese su número de cedula" required>
+                      </div>    
+                    <div class="contenido titulo">
                           <label for="cliente" class="">Cliente :</label>
                           <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Ingrese su nombre" onkeypress="return sololetras(event)" onpaste="return false" required>
                       </div>
@@ -49,10 +53,7 @@
                           <label for="direccion" class="">Dirección :</label>
                           <input type="direccion" class="form-control" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
                       </div>
-                      <div class="contenido titulo">
-                        <label for="telefono" class="">Teléfono :</label>
-                        <input type="telefono" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
-                    </div>
+                      
 
                       <div id="carrito" class="contenido">
                           <table class="tabla" id="lista-compra">
@@ -76,7 +77,7 @@
                                   </th>
                               </tr>
                               <tr>
-                                  <th colspan="4" scope="col" class="">IGV :</th>
+                                  <th colspan="4" scope="col" class="">DESCUENTO :</th>
                                   <th scope="col">
                                       <p id="igv"></p>
                                   </th>
